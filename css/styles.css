@@ -71,15 +71,32 @@ main {
     background-color: #53599a;
 }
 
+footer {
+    padding: 1 rem;
+    text-align: center;
+}
+
 
 /* info.css */
+
+h1,
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.info p::first-letter {
+    font-size: 130%;
+    font-weight: bold;
+    padding-left: 2rem;
+}
 
 
 /* responsif css */
 
 @media only screen and (min-width: 768px) {
     .container {
-        width: 75%;
+        width: 70%;
     }
     .button {
         display: flex;
