@@ -1,0 +1,93 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Releway';
+    src: url(./../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Releway';
+    src: url(./../fonts/Raleway2/Raleway-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* general css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: radial-gradient(circle, rgba(6, 141, 157, 1) 0%, rgba(109, 157, 197, 1) 100%);
+    font-family: 'Releway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* index css */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.name,
+.button {
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 2.5rem;
+}
+
+.button a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: #53599a;
+}
+
+
+/* info.css */
+
+
+/* responsif css */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 75%;
+    }
+    .button {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .button a {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
